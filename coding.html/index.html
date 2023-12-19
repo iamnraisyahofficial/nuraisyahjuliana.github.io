@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, initial-scales=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/norwester" rel="stylesheet">
+    <title>NURAISYAH JULIANA BINTI AYUB</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">NURAISYAH JULIANA</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="Education.html">Education</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Skills.html">Skills</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="Education.html">Education</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Skills.html">Skills</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </div>
+    </header>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="4183085b-3518-40d8-8d77-1166dcc75aee.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+    <main>
+        <section id="hero">
+            <h1>Welcome to my website!</h1>
+            <p> MY NAME IS NURAISYAH JULIANA BINTI AYUB
+            </p>
+            <div>
+                <a href="aboutme.html" class="action_button">Read more</a>
+           </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <footer>&copy; Copyright 2023</footer>
+
+</body>
+</html>
